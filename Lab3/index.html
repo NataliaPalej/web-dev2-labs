@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">	
+    <title>Grade converter</title>
+    <script>
+        let stop = 999;
+        let entry = prompt("Enter your grade:\nOr enter 999 to quit ");
+        while (entry != stop) {
+            if (isNaN(entry) || entry < 0) {
+                entry = prompt(`You entered ${entry}:\nPlease enter positive numbers only or 999 to exit`);
+            }
+            else if (entry <= 100 && entry >=88) {
+                alert(`Number grade: ${entry}\nLetter grade: A\nWell done!`);
+                entry = prompt(`Enter another grade or 999 to exit`);
+            }
+            else if (entry < 88 && entry >= 80) {
+                alert(`Number grade: ${entry}\nLetter grade: B\nYou're doing great!`);
+                entry = prompt(`Enter another grade or 999 to exit`);
+            }
+            else if (entry < 80 && entry >= 68) {
+                alert(`Number grade: ${entry}\nLetter grade: C\nNot too bad.`);
+                entry = prompt(`Enter another grade or 999 to exit`);
+            }
+            else if (entry < 68 && entry >= 60) {
+                alert(`Number grade: ${entry}\nLetter grade: D\nYou need to work harder`);
+                entry = prompt(`Enter another grade or 999 to exit`);
+            }
+            else if (entry < 60) {
+                alert(`Number grade: ${entry}\nLetter grade: E\nYou need to study more!`);
+                entry = prompt(`Enter another grade or 999 to exit`);
+            }
+        }
+    </script>
+</head>
+<body>
+    <script>
+    document.write("<h1>Grade</h1>");
+	document.write(`Your entered grade: ${entry}<br>`);
+    </script>
+    <main>
+        <h2>Convert your grade</h2>
+    </main>
+</body>
+</html>

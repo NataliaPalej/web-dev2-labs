@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">	
+    <title>Convert from Fahrenheit to Celcius</title>
+    <script>
+        let Farhrenheit = 0;
+        let celcius = 0;
+        let stop = 999;
+        let entry = " ";
+        while (entry != 999) {
+            entry = prompt("Enter Farhrenheit temperature: ");
+            if (!isNaN(entry) && entry > -100 && entry < 212) {
+                Farhrenheit = parseInt(entry);
+                celcius = parseFloat(((entry-32)*(5/9)).toFixed(2));
+                alert("Farhrenheit: " + Farhrenheit + "\nCelcius: " + celcius);
+            }
+            else {
+                alert("You entered: " + entry +"\nEntry range must be between -100 and +212.\nPlease try again or type in 999 again to exit");
+            }
+        }
+
+        //let entry1 = parseInt(promt("Enter Fahrenheit Temperature (or 999 to exit): "));
+        //while (entry1 != 999) {
+        //    if (isNan(entry) || entry1 < -100 || entry1 > 212) {
+        //        alert("You entered: " + entry +"\nEntry range must be between -100 and +212.\nPlease try again or type in 999 again to exit");
+        //    }
+        //    else {
+        //        let celcius1 = (entry1-32)*(5/9);
+        //        alert("Fahrenheit Temperature: " + entry1 + "\nCelcius: " + celcius.toFixed(2))
+        //    }
+        //    entry1 = parseInt(prompt("Enter Fahrenheit Temperature (or 999 to exit): "))
+        //}
+    </script>
+</head>
+<body>
+    <script>
+    document.write("<h1>Temperature</h1>");
+	document.write(`Farhenheit temperature: ${Farhrenheit}<br>Celcius temperature: ${parseFloat(celcius.toFixed(2))}&#x2103<br>`);
+    </script>
+    <main>
+        <h1>Thanks for using the temperature converter</h1>
+    </main>
+</body>
+</html>
