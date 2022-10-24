@@ -17,9 +17,7 @@ const calculateFahrenheit = temp => {
 const toggleDisplay = (label1Text, label2Text) => {
 		$("#degree_label_1").innerHTML = label1Text;
 		$("#degree_label_2").innerHTML = label2Text;
-		
 }
-
 /****************************
 *  event handler functions  *
 *****************************/
@@ -37,13 +35,14 @@ const convertTemp = () => {
 		document.getElementById("message").innerHTML = "Celsius temperature is: " + calculateCelsius(temp);
 		$("#degrees_computed").value = calculateCelsius(temp);
 		console.log(`Temp entered: ${temp}`);
-		 
 	}
+
 	else if ($("#to_fahrenheit").checked) {
 		console.log("Convert to Farehaint")
 		calculateFahrenheit();
 		console.log("Converted: " + calculateFahrenheit(temp));
 		document.getElementById("message").innerHTML = `Fagrenheit temperature is: ${calculateFahrenheit(temp)}`;
+		$("#degrees_computed").value = calculateFahrenheit(temp);
 		console.log(`Temp entered: ${temp}`);
 	}
 };
