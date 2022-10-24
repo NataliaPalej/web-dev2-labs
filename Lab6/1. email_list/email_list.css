@@ -1,0 +1,25 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: white;
+    margin: 0 auto;
+	padding: 0 2em 1em;
+    width: 670px;
+    border: 3px solid rgb(190, 90, 160);
+}
+h1 {
+	color: purple;
+}
+label {
+	float: left;
+    width: 11em;
+    text-align: right;
+}
+input {
+    margin-left: 1em;
+	margin-right: 1em;
+    margin-bottom: .5em;
+    width: 11em;
+}
+span {
+	color: red;
+}

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Range sum calculator</title>
+    <script>
+        let stop = 999;
+        let num1 = getInteger("1, (999 to exit)");
+
+
+        if (num1 != 999){
+            let num2 = getInteger("2");
+            console.log(num1);
+            console.log(num2);
+        }
+
+
+        function getInteger(some_text){
+        while(true){
+            let input = prompt("Input number " + some_text + ": ");
+
+            if (input == null) {
+                // user hit cancel
+                alert("Try again...")
+                return true;
+            } else{
+                  if (input.length<=0 || isNaN( input ) ) {
+                    // input invalid or no input
+                    alert("Invalid input. Try again...");
+                } else {
+                    // valid input returned back
+                    return parseInt(input);
+                }
+             }
+            }
+    }
+
+    </script>
+</head>
+
+<body>
+    <script>
+        document.write("<h1>Sum calculator</h1>");
+	//document.write(Your entered range: ${num1} and ${num2}<br>${num1} + ${num2} = ${sum});
+    </script>
+    <main>
+        <h2>Add two numbers together calculator</h2>
+    </main>
+</body>
+
+</html>

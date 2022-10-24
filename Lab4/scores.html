@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Average Test Scores</title>
+    <script>
+        let entry, entry1, average;
+        let total = 0;
+
+        const scores = [];
+        const names = [];
+
+        let message = "The test scores: \n";
+        let maxMsg = "The maximum score is: ";
+        let minMsg = "The minimum score is: ";
+        let fail = " - Fail";
+        let pass = " - Pass"
+
+        do {
+            entry1 = prompt("Enter student's name:")
+            if (isNaN(entry1)){
+                names[names.length] = entry1;
+            }
+            else {
+                alert("Please enter valid name")
+                entry1 = prompt("Enter student's name:")
+            }
+            entry = prompt("Enter test score:\nOr 999 to quit");
+            entry = parseInt(entry);
+            if (entry >= 0 && entry <= 100) {
+                scores[scores.length] = entry;
+                console.log("Name: " + entry1 + "\n\tScore: " + entry)
+            }
+            else if (entry != 999) {
+                alert("Entry must be a valid number between 0-100\nOr enter 999 to quit");
+            }
+        }
+        while (entry != 999);
+
+        //count total of scores
+        for (let i = 0; i < scores.length; i++) {
+            total = total + scores[i];
+            if (scores[i] > 40) {
+                message = message + names[i] + " - " + scores[i] + "%" + pass + "\n";
+            }
+            else if(scores[i] <= 40) {
+                message = message + names[i] + " - "  + scores[i] + "%" + fail + "\n";
+            }
+        }
+
+        //calculate the average
+        average = parseInt(total / scores.length);
+
+        //get max score
+        let max = scores[0];
+        for (let i = 0; i < scores.length; i++) {
+            if (scores[i] > max)
+                max = names[i] + " - " + scores[i]
+        }
+
+        //get min score
+        let min = scores[0];
+        for (let i = 0; i < scores.length; i++) {
+            if (scores[i] < min)
+                min = names[i] + " - " + scores[i];
+        }
+
+        let name = names[0]
+        for (let i = 0; i < names.length; i++) {
+            name = names[i]
+        }
+
+        //display alert message
+        console.log(`Average: ${average}\n\tMax: ${max}\n\tMin: ${min}`);
+        alert(message + "\nAverage score is: " + average + "%\n" + maxMsg + max + "%\n" + minMsg + min + "%");
+
+    </script>
+</head>
+
+<body>
+    <script>
+        document.write("<h1>The Test Scores App</h1>");
+        document.write(`${message}\n
+			Average score = ${average}%<br><br>`);
+    </script>
+    Thanks for using the Test Scores application!
+</body>
+
+</html>
