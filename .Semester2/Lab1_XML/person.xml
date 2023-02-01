@@ -1,0 +1,17 @@
+<?xml version="1.0" standalone="yes"?>
+<!DOCTYPE person[
+<!ELEMENT person (name, age, sex, address)>
+<!ELEMENT name (#PCDATA)>
+<!ELEMENT age (#PCDATA)>
+<!ELEMENT sex (#PCDATA)>
+<!ELEMENT address (#PCDATA)>
+]>
+
+<person>
+    <name>Lilly</name>
+    <age>3</age>
+    <sex>Female</sex>
+    <address>Athlone</address>
+</person>
+
+

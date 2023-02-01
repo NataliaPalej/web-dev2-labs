@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+            targetNamespace="http://www.books.org"
+            xmlns="http://www.books.org"
+            elementFormDefault="qualified">
+
+<!-- Schema Document -->
+    <xsd:element name="bookstore">
+        <xsd:complexType>
+            <xsd:sequence>
+                <xsd:element name="book" maxOccurs="unbounded">
+                    <xsd:complexType>
+                        <xsd:sequence>
+                            <xsd:element name="title" type="xsd:string"/>
+                            <!-- maxOccurs="unbounded" to be used on multiple tags allowed -->
+                            <xsd:element name="chapter" maxOccurs="unbounded">
+                                <xsd:complexType>
+                                    <xsd:sequence>
+                                        <xsd:element name="number" type="xsd:string"/>
+                                        <xsd:element name="title" type="xsd:string"/>
+                                    </xsd:sequence>
+                                </xsd:complexType>
+                            </xsd:element>
+                            <xsd:element name="price" type="xsd:string"/>
+                        </xsd:sequence>
+                        
+                        <!-- Declare attributes after sequence but BEFORE /complex -->
+                        <xsd:attribute name="category" type="xsd:string" />
+			<xsd:attribute name="author" type="xsd:string"/>
+                        
+                    </xsd:complexType>
+                </xsd:element>
+            </xsd:sequence>
+        </xsd:complexType>
+    </xsd:element>
+</xsd:schema>

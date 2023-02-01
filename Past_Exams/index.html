@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Past Exams</title>
+    <script src="Exam2020_2021.js"></script>
+</head>
+<body>
+    <header>
+        <h2 id ="mainHeading">TUS Computer Society</h2>
+        <h3 >Activities: </h3>
+    </header>
+<main>
+    <p>Our Computer society is getting involved in many initiatives. Sign up to get involved!</p>
+    <p>We have sub groups in the following areas:</p>
+    
+   <ul id = "groups">
+    <li> Web Tech</li>
+    <li>Cloud Tech</li>
+    <li>Machine Learning</li>
+   </ul>
+</main>
+<script>
+    //Part i
+    const element = document.querySelector("#groups");
+    const textNode = document.createTextNode("New Node!");
+    const liNode = document.createElement("li");
+    liNode.appendChild(textNode);
+    element.insertBefore(liNode, element.firstChild);
+
+    //Part ii
+    const elements = document.querySelectorAll("#groups li");
+    for (let i = 0; i < elements.length; i++){
+        elements[i].innerHTML = (i + 1) + ". " + elements[i].innerText;
+    }
+
+    //Part iii
+    document.querySelector("h3").firstChild.nodeValue = "Main Activities: ";
+    
+    
+
+</script>
+</body>
+</html>

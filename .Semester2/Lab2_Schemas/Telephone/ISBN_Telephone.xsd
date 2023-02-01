@@ -1,0 +1,31 @@
+<?xml version="1.0"?>
+
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+            targetNamespace="http://www.telephone.com"
+            xmlns="http://www.telephone.com"
+            elementFormDefault="qualified">
+    
+    <xsd:simpleType name="isbnType">
+        <xsd:restriction base="xsd:string">
+            <xsd:pattern value="\d{4}-\d{4}-\d{4}"/>
+        </xsd:restriction>
+    </xsd:simpleType>
+
+    <xsd:simpleType name="phoneType">
+        <xsd:restriction base="xsd:string">
+            <xsd:pattern value="\d{2}-\d{6}"/>
+        </xsd:restriction>
+    </xsd:simpleType>
+
+    <xsd:element name="BookDetails">
+        <xsd:complexType>
+            <xsd:sequence>
+                <xsd:element name="title" type="string"/>
+                <xsd:element name="authors" type="string"/>
+                <xsd:element name="isbn" type="isbnType"/>
+                <xsd:element name="phoneNo" type="phoneType"/>
+            </xsd:sequence>
+        </xsd:complexType>
+    </xsd:element>
+    
+</xsd:schema>

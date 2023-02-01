@@ -1,0 +1,9 @@
+<!-- Declare tags and their order -->
+<!ELEMENT film (title, director, cast)>
+<!ELEMENT cast (lead, support+)>
+<!ELEMENT title (#PCDATA)>
+<!ELEMENT director (#PCDATA)>
+<!ELEMENT lead (#PCDATA)>
+<!ELEMENT support (#PCDATA)> 
+
+

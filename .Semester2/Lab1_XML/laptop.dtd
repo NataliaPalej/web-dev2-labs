@@ -1,0 +1,7 @@
+<!ELEMENT laptop (manufacturer, model, memory, disk, screen, accessories)>
+<!ELEMENT manufacturer (#PCDATA)>
+<!ELEMENT model (#PCDATA)>
+<!ELEMENT memory (#PCDATA)>
+<!ELEMENT disk (#PCDATA)>
+<!ELEMENT screen (#PCDATA)>
+<!ELEMENT accessories (#PCDATA)>

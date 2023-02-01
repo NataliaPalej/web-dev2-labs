@@ -1,0 +1,6 @@
+<!ELEMENT book (author, title, chapter)>
+<!ELEMENT author (#PCDATA)>
+<!ELEMENT title (#PCDATA)>
+
+<!ATTLIST book author CDATA #FIXED "Paul">
+<!ATTLIST book chapter (chNo="1"|chNo="2") #IMPLIED>

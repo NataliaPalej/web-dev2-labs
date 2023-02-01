@@ -1,0 +1,14 @@
+<?xml version="1.0" standalone="no"?>
+<!DOCTYPE house SYSTEM "house.dtd">
+
+<house>
+    <address>Athlone</address>
+    <size>120m2</size>
+    <bedrooms>Master Bedroom</bedrooms>
+    <bedrooms>Double Bedroom</bedrooms>
+    <bedrooms>Box Room</bedrooms>
+    <toilets>2</toilets>
+    <ensuite>2</ensuite>
+    <price>600.000</price>
+</house>
+

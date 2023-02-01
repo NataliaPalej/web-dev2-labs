@@ -1,0 +1,29 @@
+<?xml version="1.0" standalone="no"?>
+<?xml-stylesheet type="text/xsl" href="book.xsl"?>
+<!DOCTYPE bookstore SYSTEM "book.dtd">
+<bookstore>
+	<book category="Technology" author="Kevin Jones">
+  		<title>XML</title>
+  		<chapter>
+			<number>1</number>
+			<title>XML is based on SGML...</title>
+		</chapter>
+  		<chapter>
+			<number>2</number>
+			<title>XML stands for eXtensible Markup Language</title>
+		</chapter>
+		<price>25.50</price>
+	</book>
+	<book category="Technology"  author="Paul Whyte">
+  		<title>XHTML</title>
+  		<chapter>
+			<number>1</number>
+			<title>XHTML is the successor to HTML...</title>
+		</chapter>
+  		<chapter>
+			<number>2</number>
+			<title>HTML stands for HyperText Markup Language</title>
+		</chapter>
+		<price>35.99</price>
+	</book>
+</bookstore>

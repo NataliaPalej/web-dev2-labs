@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<details xmlns ="http://www.personal.com"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://www.personal.com personal.xsd">
+    
+    <name>Joe Bloggs</name>
+    <age>10</age>
+    <dob>2000-01-22</dob>
+    <year>2000</year>
+    <month>--01--</month> <!-- http://www.java2s.com/Tutorial/XML/0060__XML-Schema/ThegMonthdatatyperepresentsaGregorianmonththatrecurseveryyear.htm -->
+    <day>---22</day> <!-- http://www.java2s.com/Tutorial/XML/0060__XML-Schema/ThegDaydatatyperepresentsadayofthemonththatrecurs.htm -->
+    <time>10:12:03</time>
+    
+</details>

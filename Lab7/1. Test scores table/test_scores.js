@@ -69,9 +69,26 @@ const displayScores = function () {
 	}
 }
 
+const test = function() {
+	const date = new Date();
+	alert(date.getFullYear());
+}
+
+const test2 = () => {
+	const d = new Date();
+	alert(d.getFullYear());
+	};
+
+function sum(a, b){
+	return a+b
+}
+
+
 
 window.addEventListener("load", () => {
 	$("#add").addEventListener("click", addScore);
 	$("#display_results").addEventListener("click", displayResults);
 	$("#display_scores").addEventListener("click", displayScores);
+	$("#test").addEventListener("click", test2);
+	$("#test2").addEventListener("click", sum);
 });

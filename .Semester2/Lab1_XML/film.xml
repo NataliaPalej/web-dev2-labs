@@ -1,0 +1,15 @@
+<!-- XML version to be declared, standalone "no" if file is seperate -->
+<?xml version="1.0" standalone="no"?>
+<!-- DOCTYPE must be declared with the name of file -->
+<!DOCTYPE film SYSTEM "film.dtd"> 
+
+<!-- Match the tags to dtd file -->
+<film>
+    <title>Ginny and Gorgia</title>
+    <director>Netflix</director>
+    <cast>
+        <lead>Ginny</lead>
+        <support>Gorgia</support>
+        <support>Joe</support>
+    </cast>
+</film>

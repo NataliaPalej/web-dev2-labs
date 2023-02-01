@@ -1,0 +1,7 @@
+<!ELEMENT house (address, size, bedrooms+, toilets, ensuite, price)>
+<!ELEMENT address (#PCDATA)>
+<!ELEMENT size (#PCDATA)>
+<!ELEMENT bedrooms (#PCDATA)>
+<!ELEMENT toilets (#PCDATA)>
+<!ELEMENT ensuite (#PCDATA)>
+<!ELEMENT price (#PCDATA)>

@@ -1,0 +1,11 @@
+<?xml version="1.0"?>
+<BookDetails xmlns ="http://www.telephone.com"
+             xmlns:xsi="http://www.w3.org/2001/XMLSchema"
+             xsi:schemaLocation="http://www.telephone.com ISBN_Telephone.xsd">
+
+	<title>Beginning XML</title>
+	<authors>Hunter and Gibbons</authors>
+	<isbn>7818-6100-3416</isbn>
+	<phoneNo>01-671254</phoneNo>
+        
+</BookDetails>

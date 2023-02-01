@@ -1,0 +1,17 @@
+<?xml version="1.0" standalone="yes"?>
+<!DOCTYPE car [
+<!ELEMENT car (make, model, type, reg, engine)>
+<!ELEMENT make (#PCDATA)>
+<!ELEMENT model (#PCDATA)>
+<!ELEMENT type (#PCDATA)>
+<!ELEMENT reg (#PCDATA)>
+<!ELEMENT engine (#PCDATA)>
+]>
+
+<car>
+    <make>BMW</make>
+    <model>5-Series</model>
+    <type>Saloon</type>
+    <reg>151-D-15874</reg>
+    <engine>2.0</engine>
+</car>

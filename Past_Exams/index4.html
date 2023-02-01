@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<header>
+
+</header>
+
+<main>
+    <ul>
+        <li>Jan: <a href="january.html">Bootstrap</a></li>
+        <li>Feb: <a href="february.html">Angular</a></li>
+        <li>March: <a href ="march.html">Node.js</a></li>    
+    </ul>
+</main>
+
+<footer>
+    <p id="date">Copyright 2017 AIT Web Society</p>
+</footer>
+
+<script>
+"use strict";
+var anchors = document.getElementsByTagName("a");
+
+for (var i=0; i<anchors.length; i++){
+    var link = anchors[i].getAttribute("href");
+    link = "topics/"+link;
+    anchors[i].href = link;
+}
+
+
+const newYear = () => {
+    let newDate = new Date();
+     document.querySelector("#date").innerHTML = "Copyright " + newDate.getFullYear() + " AIT Web Society.";
+    console.log("New Year", newDate.getFullYear())
+}
+
+newYear();
+
+var x = 1;
+let y = 2;
+
+var scopeFn = function(){
+    var x= 11;
+    let y = 22;
+   let z=7;
+    someOtherFn();
+}
+
+var someOtherFn = function(){
+    alert("1. x = " + x + "\n2. y = " + y + "\n3. z = " + z)
+}
+
+scopeFn();
+</script>
+
+</body>
+</html>

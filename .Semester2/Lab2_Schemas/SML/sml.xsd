@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+            targetNamespace="http://www.sml.com"
+            xmlns="http://www.sml.com"
+            elementFormDefault="qualified">
+    
+    <xsd:simpleType name="dressType">
+        <xsd:restriction base="xsd:string">
+            <xsd:enumeration value="Small"/>
+            <xsd:enumeration value="Medium"/>
+            <xsd:enumeration value="Large"/>
+        </xsd:restriction>
+    </xsd:simpleType>
+    
+    <xsd:element name="details">
+        <xsd:complexType>
+            <xsd:sequence>
+                <xsd:element name="name" type="string"/>
+                <xsd:element name="dressSize" type="dressType"/>
+            </xsd:sequence>
+        </xsd:complexType>
+    </xsd:element>
+
+</xsd:schema>

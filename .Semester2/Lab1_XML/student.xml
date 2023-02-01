@@ -1,0 +1,11 @@
+<?xml version="1.0" standalone="no"?>
+<!DOCTYPE student SYSTEM "student.dtd">
+
+<student>
+    <id>1</id>
+    <college>AIT</college>
+    <course>Software Design with AI</course>
+    <year>2</year>
+    <subjects>Web Development</subjects>
+    <subjects>Software Development</subjects>
+</student>

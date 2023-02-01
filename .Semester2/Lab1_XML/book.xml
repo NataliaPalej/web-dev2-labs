@@ -1,0 +1,8 @@
+<?xml version="1.0" standalone="no"?>
+<!DOCTYPE book SYSTEM "book.dtd">
+
+<book author="Paul">
+  <title>XML</title>
+  <chapter chNo="1">This is chapter 1</chapter>
+  <chapter chNo="2">This is chapter 2</chapter>
+</book>

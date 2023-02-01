@@ -1,0 +1,6 @@
+<!ELEMENT student (id, college, course, year, subjects+)>
+<!ELEMENT id (#PCDATA)>
+<!ELEMENT college (#PCDATA)>
+<!ELEMENT course (#PCDATA)>
+<!ELEMENT year (#PCDATA)>
+<!ELEMENT subjects (#PCDATA)>

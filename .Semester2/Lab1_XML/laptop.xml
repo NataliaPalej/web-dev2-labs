@@ -1,0 +1,10 @@
+<?xml version="1.0" standalone="no"?>
+<!DOCTYPE laptop SYSTEM "laptop.dtd">
+<laptop>
+    <manufacturer>Lenovo</manufacturer>
+    <model>XMP</model>
+    <memory>2TB</memory>
+    <disk>516GB</disk>
+    <screen>15''</screen>
+    <accessories>None</accessories>    
+</laptop>
