@@ -1,0 +1,35 @@
+<?xml version="1.0"?>
+<CLTeams xmlns ="http://www.CLTeams.org"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://www.CLTeams.org CLTeams.xsd">
+    
+    <year>2015</year>
+    <team name="Man City">
+        <owner>Sheik Mansour</owner>
+        <ground>Etihad</ground>
+        <numChamps>0</numChamps>
+        <challengers>true</challengers>
+    </team>
+    
+    <team name="Arsenal">
+        <owner>Unknown</owner>
+        <ground>The Emirates</ground>
+        <numChamps>0</numChamps>
+        <challengers />
+    </team>
+    
+    <team name="Chelsea">
+        <owner>Abramovich</owner>
+        <ground>Stamford Bridge</ground>
+        <numChamps>1</numChamps>
+        <challengers>false</challengers>
+    </team>
+    
+    <team name="Liverpool">
+        <owner>FSG</owner>
+        <ground>Anfield</ground>
+        <numChamps>5</numChamps>
+        <challengers>false</challengers>
+    </team>
+    
+</CLTeams>

@@ -1,0 +1,20 @@
+<?xml version="1.0"?>
+<HundredMetres xmlns ="http://www.hm.com"
+               xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+               xsi:schemaLocation="http://www.hm.com hm.xsd">
+    
+    <!-- 8 competitor elements allowed -->
+    <!-- finished attr can be "1st", "2nd" ... "8th" -->
+    <competitor finished="3rd">
+        <name>John</name>   <!-- string -->
+        <lane>2</lane>  <!-- 1..8 -->
+        <country>ireland</country>  <!-- string -->
+    </competitor>
+    
+    <competitor finished="1st">
+        <name>Mat</name>
+        <lane>5</lane>
+        <country>Norway</country>
+    </competitor>
+    
+</HundredMetres>

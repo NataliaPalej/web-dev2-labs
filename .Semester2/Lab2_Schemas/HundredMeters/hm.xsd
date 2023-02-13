@@ -1,0 +1,48 @@
+<?xml version="1.0"?>
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+            targetNamespace="http://www.hm.com"
+            xmlns="http://www.hm.com"
+            elementFormDefault="qualified">
+    
+    <!-- Declaring new dataType -->
+    <xsd:simpleType name="laneType">
+        <xsd:restriction base="xsd:positiveInteger">
+            <xsd:maxInclusive value="8"/>
+            <xsd:minInclusive value="1"/>
+        </xsd:restriction>
+    </xsd:simpleType>
+    
+    <xsd:element name="HundredMetres">
+        <xsd:complexType>
+            <xsd:sequence>
+                <xsd:element name="competitor" maxOccurs="8">
+                    <xsd:complexType>
+                        <xsd:sequence>
+                            <xsd:element name="name" type="xsd:string"/>
+                            <xsd:element name="lane" type="laneType"/>
+                            <xsd:element name="country" type="xsd:string"/>
+                        </xsd:sequence>
+                        
+                        <!-- Declaring attribute within Competitor Tag -->
+                        <xsd:attribute name="finished" use="required">
+                            <xsd:simpleType>
+                                <xsd:restriction base = "xsd:string">
+                                    <xsd:enumeration value="1st"/>
+                                    <xsd:enumeration value="2nd"/>
+                                    <xsd:enumeration value="3rd"/>
+                                    <xsd:enumeration value="4th"/>
+                                    <xsd:enumeration value="5th"/>
+                                    <xsd:enumeration value="6th"/>
+                                    <xsd:enumeration value="7th"/>
+                                    <xsd:enumeration value="8th"/>
+                                </xsd:restriction>
+                            </xsd:simpleType>
+                        </xsd:attribute>
+                        <!-- End of attributes declaration -->
+                        
+                    </xsd:complexType>
+                </xsd:element>
+            </xsd:sequence>
+        </xsd:complexType>
+    </xsd:element>
+</xsd:schema>

@@ -1,0 +1,73 @@
+<?xml version="1.0"?>
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+            targetNamespace="http://www.WorkArea.com"
+            xmlns="http://www.WorkArea.com"
+            elementFormDefault="qualified">
+    
+    <!-- declaring phoneNoType dataType -->
+    <xsd:simpleType name="phoneNoType">
+        <xsd:restriction base="xsd:string">
+            <xsd:pattern value="ext+\p{Nd}+\p{Nd}+\p{Nd}"></xsd:pattern>
+        </xsd:restriction>
+    </xsd:simpleType>
+    
+    <xsd:simpleType name="computerType">
+        <xsd:restriction base="xsd:string">
+            <xsd:enumeration value="yes"/>
+            <xsd:enumeration value="no"/>
+        </xsd:restriction>
+    </xsd:simpleType>
+    
+    <xsd:simpleType name="companyPositionType">
+        <xsd:restriction base="xsd:string">
+            <xsd:enumeration value="Manager"/>
+            <xsd:enumeration value="Employee"/>
+            <xsd:enumeration value="Secretary"/>
+            <xsd:enumeration value="Director"/>
+        </xsd:restriction>
+    </xsd:simpleType>
+    
+    <xsd:simpleType name="salaryType">
+        <xsd:restriction base="xsd:string">
+            <xsd:pattern value="([10000-999999])"/>
+        </xsd:restriction>
+    </xsd:simpleType>
+    
+    <xsd:element name="WorkArea">
+        <xsd:complexType>
+            <xsd:sequence>
+                <xsd:element name="desk" maxOccurs="unbounded">
+                    <xsd:complexType>
+                        <xsd:sequence>
+                            <xsd:element name="phoneNo" type="phoneNoType"/>
+                            <xsd:element name="computer" type="computerType"/>
+                            <xsd:element name="numDrawers" type="xsd:integer"/>
+                            <xsd:element name="companyPosition" type="companyPositionType"/>
+                            <xsd:element name="salaryPerYear" type="salaryType"/>
+                        </xsd:sequence>
+                        
+                        <!-- declaring owner attribute -->
+                        <xsd:attribute name="owner">
+                            <xsd:simpleType>
+                                <xsd:restriction base="xsd:string">
+                                    
+                                </xsd:restriction>
+                            </xsd:simpleType>
+                        </xsd:attribute>
+                        
+                        <!-- declaring staffId attribute -->
+                        <xsd:attribute name="staffId">
+                            <xsd:simpleType>
+                                <xsd:restriction base="xsd:string">
+                                    <xsd:pattern value="ID+\p{Nd}+\p{Nd}+\p{Nd}"></xsd:pattern>
+                                </xsd:restriction>
+                            </xsd:simpleType>
+                        </xsd:attribute>
+                        
+                    </xsd:complexType>
+                </xsd:element>
+            </xsd:sequence>
+        </xsd:complexType>
+    </xsd:element>
+
+</xsd:schema>
