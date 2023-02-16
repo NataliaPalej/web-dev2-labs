@@ -29,7 +29,9 @@
     
     <xsd:simpleType name="salaryType">
         <xsd:restriction base="xsd:string">
-            <xsd:pattern value="([10000-999999])"/>
+            <!-- \p{Sc} currency sign; \np{Nd} digit from any language; 
+                 \, punctiation symbol; ? states three or none -->
+            <xsd:pattern value="\p{Sc}\p{Nd}+(\,\p{Nd}\p{Nd}\p{Nd})?"/>
         </xsd:restriction>
     </xsd:simpleType>
     
