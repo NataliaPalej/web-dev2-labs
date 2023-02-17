@@ -1,0 +1,75 @@
+<?xml version="1.0"?>
+<xsd:schema version="1.0"
+            xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+            targetNamespace="http://www.person.org"
+            xmlns="http://www.person.org"
+            elementFormDefault="qualified">
+    
+    <!-- New Data Type Declaration -->
+    <xsd:simpleType name="nameType">
+        <xsd:restriction base="xsd:string">
+            <xsd:pattern value="\p{Lu}(\p{Ll})+\s\p{Lu}(\p{Ll})+"/>
+        </xsd:restriction>
+    </xsd:simpleType>
+    
+    <xsd:simpleType name="addressType">
+        <xsd:restriction base="xsd:string">
+            <!-- (\p{Ll})+ one or more lowercase -->
+            <xsd:pattern value="\p{Lu}(\p{Ll})+"/>
+        </xsd:restriction>
+    </xsd:simpleType>
+    
+    <xsd:simpleType name="emailType">
+        <xsd:restriction base="xsd:string">
+            <xsd:pattern value="(\p{Ll})+@(\p{Ll})+\.(\p{Ll})+(\.(\p{Ll})+\.(\p{Ll})+)?"/>
+        </xsd:restriction>
+    </xsd:simpleType>
+    <!-- End of New Data Type Declaration -->
+    
+    <!-- Schema Declaration --> 
+    <xsd:element name="staff">
+        <xsd:complexType>
+            <xsd:sequence>
+                <xsd:element name="member" maxOccurs="unbounded">
+                    <xsd:complexType>
+                        <xsd:sequence>
+                            <xsd:element name="name" type="nameType"/>
+                            <xsd:element name="dob" type="xsd:string"/>
+                            <xsd:element name="address" type="addressType"/>
+                            <xsd:element name="email" type="emailType"/>
+                        </xsd:sequence>
+                        
+                        <!-- Attributes Declaration -->
+                        <xsd:attribute name="sex">
+                            <xsd:simpleType>
+                                <xsd:restriction base="xsd:string">
+                                    <xsd:enumeration value="Male"/>
+                                    <xsd:enumeration value="Female"/>
+                                </xsd:restriction>
+                            </xsd:simpleType>
+                        </xsd:attribute>
+            
+                        <xsd:attribute name="age">
+                            <xsd:simpleType>
+                                <xsd:restriction base="xsd:integer">
+                                    <xsd:pattern value="\d{2}"/>
+                                </xsd:restriction>
+                            </xsd:simpleType>
+                        </xsd:attribute>
+            
+                        <xsd:attribute name="id">
+                            <xsd:simpleType>
+                                <xsd:restriction base="xsd:string">
+                                    <xsd:pattern value="ID\d{3}"/>
+                                </xsd:restriction>
+                            </xsd:simpleType>
+                        </xsd:attribute>
+                        <!-- End of Attributes Declaration -->
+                        
+                    </xsd:complexType>
+                </xsd:element>
+            </xsd:sequence>
+        </xsd:complexType>
+    </xsd:element>
+
+</xsd:schema>

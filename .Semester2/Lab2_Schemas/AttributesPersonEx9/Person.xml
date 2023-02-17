@@ -1,0 +1,20 @@
+<?xml version="1.0" ?>
+<staff xmlns="http://www.person.org"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.person.org Person.xsd">
+    
+    <member sex="Male" age="30" id="ID876">
+        <name>Joe Bloggs</name>
+        <dob>1980-01-25</dob>
+        <address>Dublin</address>
+        <email>jbloggs@example.com.co.uk</email>
+    </member>
+    
+    <!-- Added extra member for testing purposes -->
+    <member sex="Female" age="19" id="ID831">
+        <name>Lilly May</name>
+        <dob>2021-03-23</dob>
+        <address>Athlone</address>
+        <email>lilly@gmail.com</email>
+    </member>
+</staff>
