@@ -85,10 +85,7 @@
             <xsd:attribute name="expiry">
                 <xsd:simpleType>
                     <xsd:restriction base="xsd:string">
-                        <!-- not validating -->
-                        <xsd:pattern value="/p{Nd}/p{Nd}+"/>
-                        <xsd:pattern value="//+"/>
-                        <xsd:pattern value="/p{Nd}/p{Nd}"/>
+                        <xsd:pattern value="/d{2}///d{2}"/>
                     </xsd:restriction>
                 </xsd:simpleType>
             </xsd:attribute>
