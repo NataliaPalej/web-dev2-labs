@@ -25,9 +25,8 @@
     </xsd:simpleType>
     
     <xsd:simpleType name="fnameType">
-        <!-- to be finished, not validating atm -->
         <xsd:restriction base="xsd:string">
-            <xsd:pattern value="/p{Lu}(/p{Ll})+"/>
+            <xsd:pattern value="\p{Lu}(\p{Ll})+"/>
         </xsd:restriction>
     </xsd:simpleType>
     
