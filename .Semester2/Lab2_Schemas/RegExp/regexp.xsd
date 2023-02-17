@@ -1,4 +1,4 @@
-<?xml version="1.0"?>
+<?xml version="1.0" encoding="UTF-8"?>
 
 <xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema"
             targetNamespace="http://www.regexp.org"
@@ -25,15 +25,16 @@
     </xsd:simpleType>
     
     <xsd:simpleType name="fnameType">
+        <!-- to be finished, not validating atm -->
         <xsd:restriction base="xsd:string">
-            <xsd:pattern value="\p{Lu}+\p{Ll}"/>
+            <xsd:pattern value="/p{Lu}/p{Ll}"/>
         </xsd:restriction>
     </xsd:simpleType>
     
     <xsd:simpleType name="addressType">
         <xsd:restriction base="xsd:string">
             <!-- to be finished, not validating atm -->
-            <xsd:pattern value="\p{Lu}+\p{Ll}\,\ + Co.\ \p{Lu}+\p{Ll}"/>
+            <xsd:pattern value="/p{Lu}+/p{Ll}+/,/s+Co.+/s/p{Lu}/p{Ll}"/>
         </xsd:restriction>
     </xsd:simpleType>
     
@@ -63,6 +64,42 @@
             </xsd:sequence>
             
             <!-- Attribute declaration -->
+            <xsd:attribute name="credit">
+                <xsd:simpleType>
+                    <xsd:restriction base="xsd:string">
+                        <xsd:enumeration value="VISA"/>
+                        <xsd:enumeration value="Access"/>
+                        <xsd:enumeration value="Mastercard"/>
+                    </xsd:restriction>
+                </xsd:simpleType>
+            </xsd:attribute>
+            
+            <xsd:attribute name="number">
+                <xsd:simpleType>
+                    <xsd:restriction base="xsd:string">
+                        <xsd:pattern value="\d{16}"/>
+                    </xsd:restriction>
+                </xsd:simpleType>
+            </xsd:attribute>
+    
+            <xsd:attribute name="expiry">
+                <xsd:simpleType>
+                    <xsd:restriction base="xsd:string">
+                        <!-- not validating -->
+                        <xsd:pattern value="/p{Nd}/p{Nd}+"/>
+                        <xsd:pattern value="//+"/>
+                        <xsd:pattern value="/p{Nd}/p{Nd}"/>
+                    </xsd:restriction>
+                </xsd:simpleType>
+            </xsd:attribute>
+    
+            <xsd:attribute name="cvv">
+                <xsd:simpleType>
+                    <xsd:restriction base="xsd:string">
+                        <xsd:pattern value="\d{3}"/>
+                    </xsd:restriction>
+                </xsd:simpleType>
+            </xsd:attribute>
             
         </xsd:complexType>
     </xsd:element>
