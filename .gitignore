@@ -1,6 +1,9 @@
 # Ignore calculator-javascript that has private repo
 calculator-javascript/
 
+#Ignore mallorca-break folder
+mallorca-break/
+
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]
