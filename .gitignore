@@ -1,3 +1,6 @@
+# Ignore ppt files
+.ppt
+
 # Ignore calculator-javascript that has private repo
 calculator-javascript/
 
