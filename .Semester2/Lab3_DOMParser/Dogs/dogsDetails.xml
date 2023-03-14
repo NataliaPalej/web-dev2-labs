@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Dogs>
+    <Dog name="Lilly">
+        <Breed>T-Cup Yorkshire Terrier</Breed>
+        <Age>3</Age>
+        <Colour>Silver</Colour>
+        <Gender>Female</Gender>
+    </Dog>
+    
+    <Dog name="Lola">
+        <Breed>Shitzu</Breed>
+        <Age>2</Age>
+        <Colour>White</Colour>
+        <Gender>Female</Gender>
+    </Dog>
+    
+    <Dog name="Tiger">
+        <Breed>Maltese</Breed>
+        <Age>5 months</Age>
+        <Colour>Black</Colour>
+        <Gender>Male</Gender>
+    </Dog>
+</Dogs>

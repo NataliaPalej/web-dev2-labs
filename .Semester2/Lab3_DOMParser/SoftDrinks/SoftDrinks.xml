@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<SoftDrinks>
+    <Drink name="Coke">
+        <Company>CocaCola</Company>
+        <Colour>Black</Colour>
+        <Qty>2</Qty>
+    </Drink>
+    
+    <Drink name="Fanta">
+        <Company>CocaCola</Company>
+        <Colour>Orange</Colour>
+        <Qty>3</Qty>
+    </Drink>
+    
+    <Drink name="7Up">
+        <Company>CocaCola</Company>
+        <Colour>Clear</Colour>
+        <Qty>5</Qty>
+    </Drink>
+</SoftDrinks>
