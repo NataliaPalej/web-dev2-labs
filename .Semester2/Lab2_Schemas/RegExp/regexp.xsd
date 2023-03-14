@@ -14,7 +14,7 @@
     
     <xsd:simpleType name="quantityType">
         <xsd:restriction base="xsd:string">
-            <xsd:pattern value="\p{Nd}\p{Nd}"/>
+            <xsd:pattern value="((\p{Nd})?){2}\p{Nd}"/>
         </xsd:restriction>
     </xsd:simpleType>
     

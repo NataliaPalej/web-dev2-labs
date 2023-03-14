@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<students>
+  <student rollno="1584">
+        <firstname>John</firstname>
+        <lastname>Kells</lastname>
+        <nickname>Speedy</nickname>
+        <marks>89.1%</marks>
+   </student>
+   
+  <student rollno="1784">
+        <firstname>Jane</firstname>
+        <lastname>Martin</lastname>
+        <nickname>Jey</nickname>
+        <marks>19.8%</marks>
+    </student>
+    
+  <student rollno="2585">
+        <firstname>Andrew</firstname>
+        <lastname>Doe</lastname>
+        <nickname>Andy</nickname>
+        <marks>72.4%</marks>
+    </student>
+    
+   <student rollno="3510">
+        <firstname>Lilly</firstname>
+        <lastname>May</lastname>
+        <nickname>Lilcia</nickname>
+        <marks>99.8%</marks>
+    </student>
+    
+    <student rollno="7284">
+        <firstname>Karen</firstname>
+        <lastname>Spoon</lastname>
+        <nickname>Angry Karen</nickname>
+        <marks>N/A</marks>
+    </student>
+    
+    <student rollno="1584">
+        <firstname>Liam</firstname>
+        <lastname>O'Connor</lastname>
+        <nickname>Li</nickname>
+        <marks>57.3%</marks>
+    </student>
+</students>

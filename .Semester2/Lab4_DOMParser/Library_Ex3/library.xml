@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<library>
+    <books>
+        <book category="classics">
+            <title>Wuthering Heights</title>
+            <author>Emily Bronte</author>
+        </book>
+        <book category="fiction">
+            <title>A Week in Winter</title>
+            <author>Maeve Binchy</author>
+        </book>
+        <book category="non-fiction">
+            <title>The Future</title>
+            <author>Al Gore</author>
+        </book>
+    </books>
+</library>
