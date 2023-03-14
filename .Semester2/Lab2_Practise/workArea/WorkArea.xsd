@@ -1,0 +1,63 @@
+<?xml version="1.0"?>
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+            targetNamespace="http://www.WorkArea.com"
+            xmlns="http://www.WorkArea.com"
+            elementFormDefault="qualified">
+    
+    <!-- New DataType Declarations -->
+    <xsd:simpleType name="phoneNoType">
+        <xsd:restriction base="xsd:string">
+            <xsd:pattern value="ext\d{3}"/>
+        </xsd:restriction>    
+    </xsd:simpleType>
+    
+    <xsd:simpleType name="computerType">
+        <xsd:restriction base="xsd:string">
+            <xsd:enumeration value="yes"/>
+            <xsd:enumeration value="no"/>
+        </xsd:restriction>    
+    </xsd:simpleType>
+    
+    <xsd:simpleType name="companyPositionType">
+        <xsd:restriction base="xsd:string">
+            <xsd:pattern value="Manager|Employee|Secretary|Director"/>
+        </xsd:restriction>    
+    </xsd:simpleType>
+    
+    <xsd:simpleType name="salaryPerYearType">
+        <xsd:restriction base="xsd:string">
+            <xsd:pattern value="€([0-9])?[0-9][0-9],[0-9][0-9][0-9]"/>
+        </xsd:restriction>    
+    </xsd:simpleType>
+    
+    <xsd:element name="WorkArea">
+        <xsd:complexType>
+            <xsd:sequence>
+                <xsd:element name="desk" maxOccurs="unbounded">
+                    <xsd:complexType>
+                        <xsd:sequence>
+                            <xsd:element name="phoneNo" type="phoneNoType"/>
+                            <xsd:element name="computer" type="computerType"/>
+                            <xsd:element name="numDrawers" type="xsd:integer"/>
+                            <xsd:element name="companyPosition" type="companyPositionType"/>
+                            <xsd:element name="salaryPerYear" type="salaryPerYearType"/>
+                        </xsd:sequence>
+                        
+                        <!-- Attribute Declaration -->
+                        <xsd:attribute name="owner" type="xsd:string">
+                        </xsd:attribute>
+            
+                        <xsd:attribute name="staffId">
+                            <xsd:simpleType>
+                                <xsd:restriction base="xsd:string">
+                                    <xsd:pattern value="ID[0-9][0-9][0-9]"/>
+                                </xsd:restriction>
+                            </xsd:simpleType>
+                        </xsd:attribute>
+                    </xsd:complexType>
+                </xsd:element>
+            </xsd:sequence>
+    
+        </xsd:complexType>
+    </xsd:element>
+</xsd:schema>

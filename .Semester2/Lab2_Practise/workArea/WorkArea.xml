@@ -1,0 +1,20 @@
+<?xml version="1.0"?>
+<WorkArea xmlns ="http://www.WorkArea.com"
+          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+          xsi:schemaLocation="http://www.WorkArea.com WorkArea.xsd">
+    
+    <desk owner="John" staffId="ID876">
+        <phoneNo>ext878</phoneNo>
+        <computer>yes</computer>
+        <numDrawers>3</numDrawers>
+        <companyPosition>Director</companyPosition>
+        <salaryPerYear>€190,000</salaryPerYear>
+    </desk>
+    <desk owner="Mary" staffId="ID232">
+        <phoneNo>ext122</phoneNo>
+        <computer>yes</computer>
+        <numDrawers>3</numDrawers>
+        <companyPosition>Employee</companyPosition>
+        <salaryPerYear>€50,000</salaryPerYear>
+    </desk>
+</WorkArea>
