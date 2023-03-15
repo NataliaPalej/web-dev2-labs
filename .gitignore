@@ -1,3 +1,8 @@
+# Ignore project DOM SAX PARSER
+DOM-SAX-parsesr/
+.Semester2/DOM-SAX-parsesr/
+/.Semester2/DOM-SAX-parsesr
+
 # Ignore ppt files
 .ppt
 
